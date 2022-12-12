@@ -1,0 +1,2 @@
+class UseCaseConversionException(Exception):
+    pass

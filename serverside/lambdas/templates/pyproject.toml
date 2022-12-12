@@ -1,0 +1,8 @@
+# Pytest Framework setup
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v -x -ra"
+testpaths = [
+    "tests",
+    # "integration",
+]

@@ -1,0 +1,8 @@
+python-docx==0.8.11
+
+# Custom CPU version of Pytorch Library
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==1.8.0+cpu
+transformers==4.24.0
+sentencepiece==0.1.97
+sacremoses==0.0.53

@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "awsinternalbusiness"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "==1.3.3"
+boto3 = "^1.24.91"
+python-dotenv = "^0.21.0"
+streamlit = "^1.12.0"
+watchdog = "^2.1.9"
+pydantic = "^1.10.2"
+torch = [
+    {url = "https://download.pytorch.org/whl/cpu/torch-1.8.0-cp39-none-macosx_10_9_x86_64.whl", markers = "sys_platform == 'darwin'"},
+    {url = "https://download.pytorch.org/whl/cpu/torch-1.8.0%2Bcpu-cp39-cp39-linux_x86_64.whl", markers = "sys_platform == 'linux'"}
+]
+transformers = "^4.24.0"
+sentencepiece = "^0.1.97"
+sacremoses = "^0.0.53"
+python-docx = "^0.8.11"
+xfilios = "^0.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+isort = "^5.10.1"
+autoflake = "^1.7.7"
+flake8 = "^5.0.4"
+
+jupyterlab = "^3.5.0"
+autopep8 = "^2.0.0"
+sagemaker = "^2.121.0"
+stepfunctions = "^2.3.0"
+# Pytest Framework setup
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-v -x -ra"
+testpaths = [
+    "tests",
+    # "integration",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
