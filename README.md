@@ -17,7 +17,7 @@ export BATCH_JOB_BUCKET="<bucket-for-sagemaker-processing-job>"
 export SAGEMAKER_ARN="<sagemaker-arn-to-initiate-processing-job>"
 export LAMBDA_ARN="<arn for lambda role>"
 export STEP_FUNCTION_ARN="<step function role arn>"
-export SFN_WORKFLOW_ARN="step function workflow arn"
+export SFN_WORKFLOW_ARN="<step function workflow arn>"
 export API_GATEWAY_ARN="<api gateway role arn for cloud watch>"
 export API_URL="<url for the api>"
 ```
